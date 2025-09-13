@@ -69,7 +69,6 @@ def main():
             logical_address = int(trace_cmd[0], 16)
             page_number = logical_address >>  PAGE_OFFSET
 
-
             # Process read or write
             if trace_cmd[1] == "R":
                 mmu.read_memory(page_number)
